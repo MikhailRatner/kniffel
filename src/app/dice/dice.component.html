@@ -1,0 +1,11 @@
+<div class="text-center py-3">
+  <div
+    *ngFor="let dice of diceValues$ | async"
+    class="dice-wrapper d-inline m-3"
+  >
+    <img
+      src="assets/dices/dice-{{ dice.value }}.png"
+      alt="dice-{{ dice.id }}"
+    />
+  </div>
+</div>
